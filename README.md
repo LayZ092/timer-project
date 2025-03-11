@@ -41,4 +41,4 @@ An interactive countdown timer web application that features a customizable time
 
 ## GitHub Pages
 
-[Add your GitHub Pages link here once deployed]
+[[GitHub Pages link](https://github.com/LayZ092/timer-project)]
