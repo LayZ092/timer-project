@@ -1,0 +1,8 @@
+#minutes,
+#seconds,
+#hours {
+  font-size: 48px; /* Makes numbers large */
+  font-family: "Courier New", monospace; /* Digital-looking font */
+  font-weight: bold;
+  color: gold;
+}

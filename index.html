@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./pages/index.css" />
+    <title>Timer Task</title>
+  </head>
+  <body class="timer">
+    <div class="timer__container">
+      <div class="timer__inputs">
+        <label for="timer__task-name" class="timer__label">Task Name</label>
+        <input
+          placeholder="Enter task name"
+          type="text"
+          class="timer__task-name"
+          id="timer__task-name"
+          maxlength="20"
+        />
+        <label for="timer__task-duration" class="timer__label"
+          >Task Duration</label
+        >
+        <input
+          placeholder="Enter task duration"
+          type="number"
+          class="timer__task-duration"
+          minlength="1"
+          id="timer__task-duration"
+          maxlength="3"
+          required
+        />
+      </div>
+      <div class="timer__display">
+        <span id="hours" class="timer__display--hours">00</span>:
+        <span id="minutes" class="timer__display--minutes">00</span>:
+        <span id="seconds" class="timer__display--seconds">00</span>
+      </div>
+      <div class="timer__controls">
+        <button class="timer__start-btn">Start</button>
+        <button class="timer__pause-btn">Pause</button>
+        <button class="timer__resume-btn">Resume</button>
+        <button class="timer__reset-btn">Reset</button>
+      </div>
+    </div>
+    <div class="timer__progress-container">
+      <div class="timer__progress-bar"></div>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>

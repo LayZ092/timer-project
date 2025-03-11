@@ -1,0 +1,111 @@
+.timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightslategray;
+}
+
+.timer__display {
+  font-size: 48px;
+  font-family: "Courier New", monospace;
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 40px;
+}
+
+.timer__label {
+  gap: 8px;
+  display: flex;
+  font-size: 24px;
+}
+
+.timer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  gap: 20px;
+}
+
+.timer__inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 41px;
+  background: transparent;
+}
+
+.timer__inputs input {
+  font-size: 24px;
+  text-align: center;
+  max-width: fit-content;
+  padding: 5px;
+  border: 2px solid #333;
+  border-radius: 10px 0 10px 0;
+  background: #333;
+  color: #e0e0e0;
+}
+
+.timer__controls {
+  display: flex;
+  gap: 10px;
+  padding-top: 41px;
+}
+
+.timer__button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.timer__controls button {
+  font-size: 20px;
+  padding: 10px 20px;
+  background: #333;
+  color: #e0e0e0;
+  border: 2px solid #333;
+  border-radius: 10px 0 10px 0;
+  cursor: pointer;
+  min-width: 120px;
+  position: relative;
+}
+
+.timer__controls :hover {
+  cursor: pointer;
+}
+
+.timer__progress-container {
+  position: absolute;
+  width: 100%;
+  height: 12px;
+  top: 0;
+  left: 0;
+  background: #333;
+  border-radius: 6px;
+}
+
+.timer__progress-bar {
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  background: gold;
+  border-radius: 6px;
+}
+
+.timer__progress-bar::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 14px;
+  height: 14px;
+  background: gold;
+  border-radius: 50%;
+}
